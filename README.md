@@ -71,8 +71,9 @@ Cluster Configurations
 ```
 
 <br/>
-> [!IMPORTANT]
->The code and documentation here are provided for confidential evaluation only and may not be redistributed.
+
+> [!IMPORTANT]  
+> The code and documentation here are provided for confidential evaluation only and may not be redistributed.
 
 
 # Getting Started
