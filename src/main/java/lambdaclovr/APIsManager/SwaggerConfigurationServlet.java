@@ -15,20 +15,13 @@ public class SwaggerConfigurationServlet extends HttpServlet {
 		BeanConfig beanConfig = new BeanConfig();
 		
 		beanConfig.setBasePath("lambdaclovr/app");
-		beanConfig.setHost("localhost:8181");
-		//beanConfig.setHost("163.180.116.242:8181");
+		beanConfig.setHost("host:port");
 		beanConfig.setResourcePackage("lambdaclovr.dsl");
 		beanConfig.setPrettyPrint(true);
 		beanConfig.setScan(true);
 		beanConfig.setSchemes(new String[] {"http"});
 		beanConfig.setVersion("1.0");
-		beanConfig.setTitle("LAMBDA-CLOVR App Swagger Docs");
-		
-		//http://localhost:8181/lambdaclovr/app
-		
-		
-		//This line is added becouse the following error. 
-		//https://stackoverflow.com/questions/43931240/jersey-spark-javax-ws-rs-core-uribuilder-uri
+		beanConfig.setTitle("LAMBDA-CLOVR App Swagger Docs");		
 		RuntimeDelegate.setInstance(new org.glassfish.jersey.internal.RuntimeDelegateImpl());
 	}
 

@@ -99,8 +99,6 @@ public class AnomalyDAO {
 		
 		data[14] = "\'" + anomaly.getCreationDate() + "\'";
 		
-		//System.out.println("Data = " + Arrays.toString(data));
-		
 		operation.insertOrUdate("ANOMALY", data);
 
 		return anomaly;
@@ -150,29 +148,28 @@ public class AnomalyDAO {
 	 * @return List of RESULT objects
 	 * @throws SQLException
 	 */
-//	public static List<Anomaly> getAll(int serviceId) throws SQLException {
-//
-//		String videoIdColumnName = "VIDEO_ID";
-//		ResultSet rs = operation.getRow("SERVICE", videoIdColumnName, serviceId);
-//		
-//		List<Anomaly> list = new ArrayList<Anomaly>();
-//		
-//		Anomaly anomaly = new Anomaly();
-//		
-//		while (rs.next()) {
-//			anomaly.setAnomalyId(rs.getString("ANOMALY_ID"))
-//					.setServiceId(rs.getString("SERVICE_ID"))
-//					.setdsId(rs.getString("DS_ID"))
-//					.setTitle(rs.getString("TITLE"))
-//					.setMessage(rs.getString("MESSAGE"))
-//					.setPicture(rs.getString("PICTURE"))
-//					.setPictureTimeStamp(rs.getString("pciture_timestamp"))
-//					.setStartFrame(rs.getString("START_FRAME"))
-//					.setEndFrame(rs.getString("END_FRAME"))
-//					.setPosition(rs.getString("POSITION"))
-//					.setCreationDate(rs.getString("CREATION_DATE"));
-//		}
-//		return list;
-//	}
+	public static List<Anomaly> getAll(int serviceId) throws SQLException {
 
+		String videoIdColumnName = "VIDEO_ID";
+		ResultSet rs = operation.getRow("SERVICE", videoIdColumnName, serviceId);
+		
+		List<Anomaly> list = new ArrayList<Anomaly>();
+		
+		Anomaly anomaly = new Anomaly();
+		
+		while (rs.next()) {
+			anomaly.setAnomalyId(rs.getString("ANOMALY_ID"))
+					.setServiceId(rs.getString("SERVICE_ID"))
+					.setdsId(rs.getString("DS_ID"))
+					.setTitle(rs.getString("TITLE"))
+					.setMessage(rs.getString("MESSAGE"))
+					.setPicture(rs.getString("PICTURE"))
+					.setPictureTimeStamp(rs.getString("pciture_timestamp"))
+					.setStartFrame(rs.getString("START_FRAME"))
+					.setEndFrame(rs.getString("END_FRAME"))
+					.setPosition(rs.getString("POSITION"))
+					.setCreationDate(rs.getString("CREATION_DATE"));
+		}
+		return list;
+	}
 }

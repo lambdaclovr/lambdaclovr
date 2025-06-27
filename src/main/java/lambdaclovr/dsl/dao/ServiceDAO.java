@@ -50,8 +50,6 @@ public class ServiceDAO {
 		data[5] = "\'" + service.getDescription() + "\'";
 		data[6] = "TO_DATE(\'" + service.getCreationDate() + "\', \'yyyy-MM-dd\', \'GMT+9\')";
 
-		System.out.println("Data = " + Arrays.toString(data));
-		
 		operation.insertOrUdate("SERVICE", data);
 
 		return service;
@@ -207,7 +205,7 @@ public class ServiceDAO {
 		
 			list.add(service);
 		}
-		//System.out.println(list.size());
+		
 		return list;
 	}
 }

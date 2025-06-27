@@ -127,10 +127,8 @@ public class DataSourceDAO {
 	public static ResultSet delete(int ds_id) {
 
 		ResultSet numberOfDeletedRecords;
-		// String ds_id = Integer.toString(id); //convert Integer to String
 		String emailColumnName = "ds_id";
 		numberOfDeletedRecords = operation.removeRow("DATA_SOURCE", emailColumnName, ds_id);
 		return numberOfDeletedRecords;
-
 	}
 }

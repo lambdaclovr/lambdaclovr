@@ -165,7 +165,6 @@ public class VideoDAO {
      * @param email
      */
     public static ResultSet delete(int videoId) {
-//        PhoenixConnection pc = new PhoenixConnection();
         ResultSet numberOfDeletedRecords;
         String columnName = "video_id";
         numberOfDeletedRecords = operation.removeRow("VIDEO", columnName, videoId);

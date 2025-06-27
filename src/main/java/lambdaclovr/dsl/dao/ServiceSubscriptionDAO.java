@@ -48,7 +48,6 @@ public class ServiceSubscriptionDAO {
 		data[5] = "TO_DATE(\'" + serviceSubscription.getSubscriptionStartDate() + "\', \'yyyy-MM-dd\', \'GMT+9\')";
 		data[6] = "TO_DATE(\'" + serviceSubscription.getSubscriptionStopDate() + "\', \'yyyy-MM-dd\', \'GMT+9\')";
 		
-		//System.out.println("Data = " + Arrays.toString(data));
 		operation.insertOrUdate("SERVICE_SUBSCRIPTION", data);
 
 		return serviceSubscription;
@@ -75,8 +74,6 @@ public class ServiceSubscriptionDAO {
 		data[5] = "TO_DATE(\'" + serviceSubscription.getSubscriptionStartDate() + "\', \'yyyy-MM-dd\', \'GMT+9\')";
 		data[6] = "TO_DATE(\'" + serviceSubscription.getSubscriptionStopDate() + "\', \'yyyy-MM-dd\', \'GMT+9\')";
 
-		//System.out.println("Data = " + Arrays.toString(data));
-		
 		operation.insertOrUdate("SERVICE_SUBSCRIPTION", data);
 
 		return serviceSubscription;
@@ -208,7 +205,6 @@ public class ServiceSubscriptionDAO {
 			list.add(serviceSubscription);
 		}
 
-		//System.out.println(list.size());
 		return list;
 	}
 

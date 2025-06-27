@@ -70,9 +70,8 @@ public class FeatureDAO {
 		data[1] = "" + feature.getVideoId() + "";
 		data[2] = "\'" + feature.getFeatureName() + "\'";
 		data[3] = "\'" + feature.getFeatureVector() + "\'";
-		//data[4] = "TO_DATE(\'" + feature.getCreationDate() + "\', \'yyyy-MM-dd\', \'GMT+9\')"; //no need to update date
+		data[4] = "TO_DATE(\'" + feature.getCreationDate() + "\', \'yyyy-MM-dd\', \'GMT+9\')"; //no need to update date
 
-		//System.out.println("Data = " + Arrays.toString(data));
 		operation.insertOrUdate("FEATURE", data);
 
 		return feature;
@@ -112,7 +111,6 @@ public class FeatureDAO {
 				.setCreationDate(rs.getString("CREATION_DATE"));
 		}
 		
-		//System.out.println("Name: " + feature.getFeatureName());
 		return feature;
 	}
 

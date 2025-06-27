@@ -20,7 +20,7 @@ import java.sql.Statement;
  * </p>
  * 
  * @author Numan Khan, 
- * http://163.180.116.39		
+ * http://<host-ip>		
  * @version 1.0
  * @since 2024-05-20
  **/
@@ -28,7 +28,7 @@ import java.sql.Statement;
 public class PhoenixConnection {
 	public String URl1 = "jdbc:phoenix:localhost:2181:/hbase-unsecure"; // In use
 	//public String URl2 = "jdbc:phoenix:thin:url=http://localhost:8765;serialization=PROTOBUF";
-	public String URl2 = "jdbc:phoenix:thin:url=http://163.180.118.133:8765;serialization=PROTOBUF";
+	public String URl2 = "jdbc:phoenix:thin:url=http://<host-ip>:8765;serialization=PROTOBUF";
 	//public String driver = "org.apache.phoenix.jdbc.PhoenixDriver";
 	public String driver = "org.apache.phoenix.queryserver.client.Driver";
 	public String userName = "";

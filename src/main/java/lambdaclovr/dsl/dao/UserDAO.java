@@ -85,29 +85,7 @@ public class UserDAO {
 
 		BigInteger userId = new BigInteger(get(user.getEmail()).getUserId() + "");
 		Configuration conf = new Configuration();
-		// conf.set("user", "user");
-		// conf.set("password", "1234");
-		// System.setProperty("HADOOP_USER_NAME", "root");
-		// conf.addResource(new Path(System.getProperty("user.dir") +
-		// "\\core-site.xml"));
-		// conf.addResource(new Path(System.getProperty("user.dir") +
-		// "\\hdfs-site.xml"));
-
-//		try {
-//			FileSystem fs = FileSystem.get(new URI("hdfs://163.180.116.101:8020/lambdaclovr/"), conf);
-//
-//			Path src = new Path(fs.getWorkingDirectory() + "/" + userId);
-//
-//			fs.mkdirs(src);
-//
-//			FileStatus[] fileStatus = fs.listStatus(new Path("hdfs://163.180.116.101:8020/"));
-//			for (FileStatus status : fileStatus) {
-//				System.out.println(status.getPath().toString());
-//			}
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}
-
+		
 		return true;
 	}
 	
