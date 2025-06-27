@@ -1,0 +1,17 @@
+siat.APIsManager
+siat.dsl.dao
+siat.dsl.data.acquisition.streaming
+siat.dsl.data.acquisition.streaming.operations.client
+siat.dsl.data.acquisition.streaming.operations.client.common
+siat.dsl.data.acquisition.streaming.operations.client.configuration
+siat.dsl.data.acquisition.streaming.operations.client.examples
+siat.dsl.data.acquisition.streaming.operations.client.exception
+siat.dsl.data.acquisition.streaming.operations.client.kafka
+siat.dsl.data.acquisition.streaming.operations.client.kafka.entities
+siat.dsl.data.acquisition.streaming.operations.client.kafka.producer
+siat.dsl.data.acquisition.streaming.operations.client.zookeeper
+siat.dsl.data.acquisition.streaming.operations.client.zookeeper.entities
+siat.dsl.exception
+siat.dsl.model
+siat.dsl.phoenix
+siat.dsl.service
