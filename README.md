@@ -1,5 +1,7 @@
 # **λ-CLOVR**: Looking for a Needle in a Haystack: A Content-Based Video Big Data Retrieval System in the Cloud
 
+<video src="figures/demo.mp4" width="100%" controls autoplay></video>
+
 The enormous amounts of video data from CCTV, drones, smartphones, and streaming platforms demands retrieval systems that can scale well beyond traditional, single-machine designs. λ-CLOVR—a scalable, distributed content-based video retrieval (CBVR) system—addresses this need by combining a distributed, cloud-native technology stack with the principles of lambda architecture. It offers a single framework for near real-time stream processing and large-scale offline analytics, unifying two workloads that require separate pipelines.
 
 At its core, λ-CLOVR relies on Kafka to ingest and buffer millions of frames per second, Spark to perform in-memory structural analysis and feature extraction, SolrCloud to index deep visual embeddings, and HDFS/HBase for durable storage and rich metadata management. A domain-specific data abstraction, VidRDD, hides the complexities of video analytics inside Spark, while the Distributed Encoded Deep Feature Indexer (DEFI) converts high-dimensional CNN features into compact representations suitable for efficientt indexing.
