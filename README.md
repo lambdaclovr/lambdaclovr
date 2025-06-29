@@ -1,6 +1,6 @@
 # **λ-CLOVR**: Looking for a Needle in a Haystack: A Content-Based Video Big Data Retrieval System in the Cloud
 
-Demo:
+[Watch the demo](http://demo.dkelab.kr/demo.html)
 [![Watch the demo](figures/demo.jpg)](http://demo.dkelab.kr/demo.html)
 
 The enormous amounts of video data from CCTV, drones, smartphones, and streaming platforms demands retrieval systems that can scale well beyond traditional, single-machine designs. λ-CLOVR—a scalable, distributed content-based video retrieval (CBVR) system—addresses this need by combining a distributed, cloud-native technology stack with the principles of lambda architecture. It offers a single framework for near real-time stream processing and large-scale offline analytics, unifying two workloads that require separate pipelines.
