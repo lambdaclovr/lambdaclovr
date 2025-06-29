@@ -63,14 +63,31 @@ These `Cluster Configurations` directory provides Ambari-managed configs. Cluste
 
 ```
 Cluster Configurations
-├── HBASE_CLIENT         # Configuration for HBase metadata and intermediate result storage.
-├── HDFS_CLIENT          # Hadoop settings for distributed video storage.
-├── HIVE_CLIENT          # Metadata query and storage support for structured information.
-├── MAPREDUCE2_CLIENT    # Supports batch processing tasks within VBDAL.
-├── SPARK2_CLIENT        # In-memory video analytics, VidRDD-based processing.
-├── TEZ_CLIENT           # DAG engine parameters for Hive
-├── YARN_CLIENT          # Capacity scheduler, container rules, resource management for distributed jobs.
-└── ZOOKEEPER_CLIENT     # Coordination for Kafka and HBase clusters, quorum and logging settings
+├───ACCUMULO_CLIENT          # Configuration for Accumulo, a sorted, distributed key/value store built on Hadoop.
+├───ATLAS_CLIENT             # Metadata management and data governance support via Apache Atlas.
+├───BASH_COMPLETION.D_CLIENT # Shell completion scripts for CLI tools to improve user experience.
+├───DEFAULT                  # Default system-wide Hadoop and ecosystem configurations.
+├───DRUID_CLIENT             # Real-time analytics and ingestion settings for Apache Druid.
+├───HBASE_CLIENT             # Configuration for HBase metadata and intermediate result storage.
+├───HDFS_CLIENT              # Hadoop settings for distributed video storage.
+├───HIVE-HCATALOG_CLIENT     # HCatalog support for shared metadata across Hadoop tools.
+├───HIVE_CLIENT              # Metadata query and storage support for structured information.
+├───KAFKA_CLIENT             # Messaging system configuration for real-time streaming pipelines.
+├───KNOX_CLIENT              # Gateway access and security configuration for Hadoop REST APIs.
+├───LIVY2_CLIENT             # REST server configuration for submitting Spark jobs remotely.
+├───MAPREDUCE2_CLIENT        # Supports batch processing tasks within VBDAL.
+├───OOZIE_CLIENT             # Workflow scheduler settings for Hadoop jobs coordination.
+├───PHOENIX_CLIENT           # SQL layer support over HBase for low-latency queries.
+├───PIG_CLIENT               # Scripting platform configurations for analyzing large data sets.
+├───RANGER_CLIENT            # Security policy administration for data access control.
+├───SECURITY_CLIENT          # General security and Kerberos authentication settings.
+├───SPARK2_CLIENT            # In-memory video analytics, VidRDD-based processing.
+├───SQOOP_CLIENT             # Import/export configurations for moving data between Hadoop and RDBMS.
+├───STORM_CLIENT             # Real-time distributed computation settings for streaming data.
+├───TEZ_CLIENT               # DAG engine parameters for Hive.
+├───YARN_CLIENT              # Capacity scheduler, container rules, resource management for distributed jobs.
+├───ZEPPELIN_CLIENT          # Notebook-based interactive data analytics configuration.
+└───ZOOKEEPER_CLIENT         # Coordination for Kafka and HBase clusters, quorum and logging settings.
 ```
 
 <br/>
