@@ -102,6 +102,7 @@ Cluster Configurations
 - Clone this repository on the λ-CLOVR Server node and build it: `mvn clean package`.
 - Deploy cluster configurations through Ambari.
 - Deploy all services via Ambari on HDP cluster.
+- Build Artifacts and upload Uber-JAR's to HDFS.
 - Configure and launch Kafka topics for stream ingestion.
 - Start λ-CLOVR web service and REST APIs.
 - Submit video streams or batch video datasets for indexing.
