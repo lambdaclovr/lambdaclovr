@@ -31,7 +31,7 @@ import lambdaclovr.dsl.phoenix.Crud;
  * @Description: This class is used to handle user related CRUD operations.
  *               </p>
  * 
- * @author Ali <ali@khu.ac.kr>
+ * @author Numan
  * 
  * @version 1.0
  * @since 2024-May-05

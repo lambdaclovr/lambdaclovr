@@ -44,7 +44,7 @@ public class DataSourceService {
 
 	/**
 	 * POST request to create a new DataSource. <br>
-	 * http://localhost:8080/lambdaclovr/app/datasouce/ <br>
+	 * http://host:port/lambdaclovr/app/datasouce/ <br>
 	 * RolesAllowed: Session user (All).
 	 * 
 	 * @param DataSource
@@ -65,7 +65,7 @@ public class DataSourceService {
 
 	/**
 	 * POST request to create a new DataSource. <br>
-	 * http://localhost:8080/lambdaclovr/app/datasouce/ <br>
+	 * http://host:port/lambdaclovr/app/datasouce/ <br>
 	 * RolesAllowed: Session user (All).
 	 * 
 	 * @param DataSource
@@ -86,7 +86,7 @@ public class DataSourceService {
 
 	/**
 	 * GET request to get a list of DataSources. <br>
-	 * http://localhost:8080/lambdaclovr/app/datasouce/ <br>
+	 * http://host:port/lambdaclovr/app/datasouce/ <br>
 	 * RolesAllowed: Session user (Admin).
 	 * 
 	 * @param DataSource
@@ -107,7 +107,7 @@ public class DataSourceService {
 
 	/**
 	 * GET request to get a Data Source. <br>
-	 * http://localhost:8080/lambdaclovr/app/datasouce/{ds_id} <br>
+	 * http://host:port/lambdaclovr/app/datasouce/{ds_id} <br>
 	 * RolesAllowed: Session user (All).
 	 * 
 	 * @param Nill

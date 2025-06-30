@@ -44,7 +44,7 @@ public class VideoService {
 
 	/**
 	 * POST request to create a new Video. <br>
-	 * http://localhost:8080/lambdaclovr/app/video <br>
+	 * http://host:port/lambdaclovr/app/video <br>
 	 * RolesAllowed: Session user (All).
 	 * 
 	 * @param Video

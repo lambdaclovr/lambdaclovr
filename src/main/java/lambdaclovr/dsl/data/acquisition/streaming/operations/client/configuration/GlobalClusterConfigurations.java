@@ -1,8 +1,8 @@
 package lambdaclovr.dsl.data.acquisition.streaming.operations.client.configuration;
 
 public interface GlobalClusterConfigurations {
-//	public static String KAFKA_SERVER_HOST_NAMES = "localhost:9092";
-//	public static String ZOOKEEPER_SERVER_HOST_NAMES = "localhost:2181";
+//	public static String KAFKA_SERVER_HOST_NAMES = "host:port";
+//	public static String ZOOKEEPER_SERVER_HOST_NAMES = "host:port";
 	
 	//Cluster
 	public static String KAFKA_SERVER_HOST_NAMES = "node5.dke:6677,node6.dke:6677,node7.dke:6677";

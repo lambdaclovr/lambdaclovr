@@ -17,8 +17,6 @@ import java.util.HashMap;
  * </p>
  * 
  * @author Numan Khan, 
- * 		   Mostafij Akhond<shaon.iit08@gmail.com>, 
- * 		   Mohammed Ali <ali@dke.ac.kr>
  * 
  * @version 1.0
  * @since 2024-05-20

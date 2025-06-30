@@ -55,7 +55,7 @@ import lambdaclovr.dsl.model.User;
 @SwaggerDefinition(tags = { @Tag(name = "User Service", description = "REST Endpoint for User Service") })
 public class UserService {
 	/**
-	 * Respond to get request. http://localhost:8080/lambdaclovr/app/users
+	 * Respond to get request. http://host:port/lambdaclovr/app/users
 	 * 
 	 * @param Nill
 	 * @return List of Users (JSon Object)
@@ -88,7 +88,7 @@ public class UserService {
 	///////////////////////////////////////////////////
 
 	/**
-	 * Response to get request. http://localhost:8080/lambdaclovr/rest/users/{email}
+	 * Response to get request. http://host:port/lambdaclovr/rest/users/{email}
 	 * 
 	 * @param email
 	 * @return return a user if found against the email.
@@ -123,7 +123,7 @@ public class UserService {
 
 	/**
 	 * POST request. 
-	 * http://localhost:8080/lambdaclovr/app/users
+	 * http://host:port/lambdaclovr/app/users
 	 * 
 	 * @param User Object
 	 * @return User object
@@ -158,7 +158,7 @@ public class UserService {
 	////////////////////////////////////////////////////
 	/**
 	 * POST request to update user information. 
-	 * http://localhost:8080/lambdaclovr/app/users
+	 * http://host:port/lambdaclovr/app/users
 	 * 
 	 * @param User Object
 	 * @return User object
@@ -245,7 +245,7 @@ public class UserService {
 
 	/**
 	 * PUT request to update user level. 
-	 * http://localhost:8080/lambdaclovr/app/users/developerRequest/{email}
+	 * http://host:port/lambdaclovr/app/users/developerRequest/{email}
 	 * 
 	 * @param email
 	 * @return  

@@ -28,7 +28,7 @@ public class WordCountConsumerExample {
 		JavaStreamingContext jssc = new JavaStreamingContext(sparkConf, Durations.seconds(2));
 
 		Map<String, Object> kafkaParams = new HashMap<>();
-		kafkaParams.put("bootstrap.servers", "localhost:9092");
+		kafkaParams.put("bootstrap.servers", "host:port");
 		kafkaParams.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
 		kafkaParams.put("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
 		kafkaParams.put("enable.auto.commit", false);

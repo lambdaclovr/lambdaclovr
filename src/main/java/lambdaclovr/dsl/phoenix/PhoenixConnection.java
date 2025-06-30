@@ -26,8 +26,8 @@ import java.sql.Statement;
  **/
 
 public class PhoenixConnection {
-	public String URl1 = "jdbc:phoenix:localhost:2181:/hbase-unsecure"; // In use
-	//public String URl2 = "jdbc:phoenix:thin:url=http://localhost:8765;serialization=PROTOBUF";
+	public String URl1 = "jdbc:phoenix:host:port:/hbase-unsecure"; // In use
+	//public String URl2 = "jdbc:phoenix:thin:url=http://host:port;serialization=PROTOBUF";
 	public String URl2 = "jdbc:phoenix:thin:url=http://<host-ip>:8765;serialization=PROTOBUF";
 	//public String driver = "org.apache.phoenix.jdbc.PhoenixDriver";
 	public String driver = "org.apache.phoenix.queryserver.client.Driver";

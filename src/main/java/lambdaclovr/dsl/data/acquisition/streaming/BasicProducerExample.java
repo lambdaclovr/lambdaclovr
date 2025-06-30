@@ -19,7 +19,7 @@ public class BasicProducerExample {
        Properties props = new Properties();
        props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, GlobalClusterConfigurations.KAFKA_SERVER_HOST_NAMES);
        //props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "127.0.0.1:6667");
-       //props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:6667");
+       //props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "host:port");
        //props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "sandbox-hdp.hortonworks.com:9092");
        props.put(ProducerConfig.ACKS_CONFIG, "all");
        props.put(ProducerConfig.RETRIES_CONFIG, 0);
